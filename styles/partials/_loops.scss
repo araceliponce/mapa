@@ -1,0 +1,26 @@
+//https://www.youtube.com/watch?v=gP8yFWCTr7Q
+@use '_maps' as *;
+@use '_mixins' as *;
+
+:root{
+//en 'in $....' va el nombre del mapa, no el nombre del archivo scss
+  @each $color, $shadesGroup in $colors{
+    @each $shade, $value in $shadesGroup{
+      --color-#{$color}-#{$shade}: #{$value};
+    }
+  }
+
+  @each $screenSize, $fontSizeGroup in $type-scale{
+    @if $screenSize == small{
+      @each $size, $value in $fontSizeGroup{
+        --fs-#{$size}: #{$value};
+      }
+    } @else{
+      @include onbigger(){
+        @each $size, $value in $fontSizeGroup{
+          --fs-#{$size}: #{$value};
+        }
+      }
+    }
+  }
+}

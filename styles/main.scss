@@ -1,0 +1,4 @@
+//https://www.youtube.com/watch?v=CR-a8upNjJ0&t import forward sass.
+//Con @use 'path_relativo_a_archivo' as * puedes usarlo en tus propiedades sin tener que mencionar el nombre del namespace cada vez. 
+//Puedes importar todos los arhivos scss de una carpeta añadiendole un archivo _index.scss que tenga definidos todos los @forwards y usando solo @use 'path_relativo_a_archivo' as *
+@use 'partials';

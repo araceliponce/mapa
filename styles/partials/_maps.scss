@@ -1,0 +1,25 @@
+//en setting SCSS › Format: Brace Style EXPANDED,,,,,,,,,, SCSS › Format: Enable  DISABLED
+//en mapas sass se usa solo , no ;
+$colors: (
+  primary: (
+    100: hsl(15, 100%, 75%),
+    200: hsl(15, 100%, 70%),
+    300: hsl(15, 100%, 65%),
+    400: hsl(15, 100%, 60%),
+  ),
+  secondary: (
+    200: hsl(292, 100%, 73%),
+    400: hsl(292, 100%, 63%),
+  ),
+);
+
+$type-scale: (
+  small:(
+    200: 1rem,
+    400: 1rem,
+  ),
+  medium:(
+    200: 1.2rem,
+    400: 1.5rem,
+  )
+)

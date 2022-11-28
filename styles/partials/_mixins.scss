@@ -1,0 +1,6 @@
+// para colocar defaults, en lugar de '$bp' puedes poner '$bp: 30rem' por ejemplo
+@mixin onbigger( $bp:30rem ) {
+  @media only screen and (min-width: $bp){
+    @content
+  }
+}

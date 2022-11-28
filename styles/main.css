@@ -1,0 +1,16 @@
+:root {
+  --color-primary-100: hsl(15deg, 100%, 75%);
+  --color-primary-200: hsl(15deg, 100%, 70%);
+  --color-primary-300: hsl(15deg, 100%, 65%);
+  --color-primary-400: hsl(15deg, 100%, 60%);
+  --color-secondary-200: hsl(292deg, 100%, 73%);
+  --color-secondary-400: hsl(292deg, 100%, 63%);
+  --fs-200: 1rem;
+  --fs-400: 1rem;
+}
+@media only screen and (min-width: 30rem) {
+  :root {
+    --fs-200: 1.2rem;
+    --fs-400: 1.5rem;
+  }
+}/*# sourceMappingURL=main.css.map */
